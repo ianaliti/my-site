@@ -1,0 +1,36 @@
+/* Contact.css */
+.contact {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 1.75em;
+    }
+
+    .contact p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .contact p {
+        font-size: 0.9em;
+    }
+}

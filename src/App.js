@@ -1,44 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import './App.css';
 import Header from './components/header/Header';
-import Navigation from './components/Navigation/Navigation';
 import Home from './components/home/Home';
 import About from './components/about/About';
+import Cases from './components/cases/Cases';
 import Contact from './components/contact/Contact';
-import Loader from './components/loader/Loader'
 import Footer from './components/footer/Footer';
-import './App.css';
+import Education from './components/education/Education';
 
+import ProjectOne from './components/projects/ProjectOne'; // Example for the ProjectOne page
+// import Course1 from './components/courses/Course1'; // Import the component for the course page
 
-const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Simulate a delay for the loader (e.g., 2 seconds)
-
-    return () => clearTimeout(timer);
-  }, []);
-
+function App() {
   return (
     <Router>
-      <div className="app">
-        {loading && <Loader />}
+      <div className="App">
         <Header />
-        <Navigation />
-        <main className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/cases" element={<Cases />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/project-one" element={<ProjectOne />} />
+          {/* <Route path="/course1" element={<Course1 />} /> Add the route for the course */}
+        </Routes>
         <Footer />
       </div>
     </Router>
   );
-};
+}
 
 export default App;

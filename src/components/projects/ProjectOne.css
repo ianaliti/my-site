@@ -1,0 +1,105 @@
+.project-one-container {
+  font-family: 'Arial, sans-serif';
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.project-overview,
+.skills-developed,
+.design-process,
+.implementation,
+.conclusion {
+  margin-bottom: 40px;
+}
+
+.project-overview h2,
+.skills-developed h2,
+.design-process h2,
+.implementation h2,
+.conclusion h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-overview p,
+.skills-developed p,
+.design-process p,
+.implementation p,
+.conclusion p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.skills-developed ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-developed ul li {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.primary-btn {
+  background-color: #5b3a29;
+  color: white;
+}
